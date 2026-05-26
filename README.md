@@ -4,9 +4,8 @@
 
 a [Haxe](https://haxe.org/) Library for interacting with the [GameBanana](https://gamebanana.com/) API!
 
----
-
 the library by itself doesn't do much other than give quick access to API data from any given GameBanana page
+you can download from it, but it's very limited
 
 ---
 
@@ -35,8 +34,10 @@ class Main {
         // recommended for mods that update for multiple OS'
 
         // this path gets set on initialization to the absolute path of this script
-        banana.downloadPath;
+        banana.downloadPath = '.temp/';
+        // new path (Drive:)/env/.temp/updatefile.zip
 	}
 }
 
 ```
+---
