@@ -6,13 +6,13 @@ import haxe.Json;
  */
 class IData {
     public var version:String;
-    public var content_id:String;
+    public var contFiles:Dynamic;
     public var raw_data:Dynamic;
     public var data_rec:Int;
-    public function new(raw_data:Dynamic, data_rec:Int, content_id:String) {
+    public function new(raw_data:Dynamic, data_rec:Int) {
         this.raw_data = raw_data;
         this.data_rec = data_rec;
         version = raw_data._sVersion;
-        this.content_id = content_id;
+        contFiles = raw_data._aFiles;
     }
 }
