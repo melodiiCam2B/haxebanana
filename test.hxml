@@ -1,0 +1,5 @@
+-cp src
+-lib openfl
+-lib lime
+# -lib haxebanana
+-x Main

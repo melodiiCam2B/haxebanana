@@ -12,9 +12,5 @@
   "classPath": "haxebanana",
   "contributors": [
     "Melodii2b"
-  ],
-  "dependencies": {
-    "hscript-ex": "",
-    "hscript": "2.7.0"
-  }
+  ]
 }
