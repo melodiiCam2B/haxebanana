@@ -1,0 +1,20 @@
+{
+  "name": "haxebanana",
+  "url" : "https://github.com/melodiiCam2B/haxebanana/",
+  "license": "MIT",
+  "tags": [
+    "haxe", 
+    "api", 
+    "game banana"
+  ],
+  "description": "Haxe interface library for the Game Banana API",
+  "version": "1.0.0",
+  "classPath": "haxebanana",
+  "contributors": [
+    "Melodii2b"
+  ],
+  "dependencies": {
+    "hscript-ex": "",
+    "hscript": "2.7.0"
+  }
+}
