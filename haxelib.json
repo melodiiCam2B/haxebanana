@@ -7,9 +7,9 @@
     "api", 
     "game banana"
   ],
-  "releasenote": "Adjusted README",
+  "releasenote": "Fixed up a few mistakes",
   "description": "Haxe interface library for the Game Banana API",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "classPath": "haxebanana",
   "contributors": [
     "Melodii2b"
