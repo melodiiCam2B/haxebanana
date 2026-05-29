@@ -14,12 +14,16 @@ import sys.io.FileOutput;
 class Downloader extends URLLoader {
     public var base_url:String = "https://gamebanana.com/dl/";
     public var file:Dynamic;
+	public var totalBytes:Float;
 
     public function new (file:Dynamic, downloadPath:String) {
         this.file = file;
         super();
         dataFormat = BINARY;
 
+		addEventListener(ProgressEvent.PROGRESS, function(e) {
+			totalBytes = e.bytesTotal;
+		});
         addEventListener(Event.COMPLETE, function(e) {
 			var fileOutput:FileOutput = File.write('$downloadPath${file._sFile}', true);
 
@@ -35,8 +39,8 @@ class Downloader extends URLLoader {
         load(new URLRequest(base_url+file._idRow));
     }
     public function printIn(?str:String = '\n') {
-        str += '> Downloader [haxebanana.Downloader] Downlaod Log\n';
-        str += '> Version Downloaded: ${file._sVersion} | File Size ${size(bytesTotal)}\n';
+        str += '> Downloader [haxebanana.Downloader] Download Log\n';
+        str += '> Version Downloaded: ${file._sVersion} | File Size ${size(totalBytes)}\n';
         str += '> File Id: ${file._idRow} | File Name: ${file._sFile}\n';
         
         Sys.println(str);

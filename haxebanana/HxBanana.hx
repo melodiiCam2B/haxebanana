@@ -24,7 +24,7 @@ class HxBanana {
         loader = new ILoader(contID, this);
         downloads = new IDownloads(contID, this);
 
-        var str = '';
+        var str = '\n';
         str += '> HxBanana [haxebanana.HxBanana] Initilization Log\n';
         str += '> Owner: ${loader.json_raw._aRecords[0]._aSubmitter._sName} - Page ID ${contID}\n';
         str += '> Current Mod ID: ${loader.json_raw._aRecords[0]._aSubmission._sName}\n';
